@@ -1,4 +1,8 @@
-import {NextResponse} from "next/server";
-// Set RIOT_VERIFICATION_TOKEN only when Riot provides the exact value.
-export const dynamic="force-dynamic";
-export function GET(){const token=process.env.RIOT_VERIFICATION_TOKEN;if(!token){return new NextResponse("Riot verification has not been configured.",{status:404,headers:{"Content-Type":"text/plain; charset=utf-8","Cache-Control":"no-store"}})}return new NextResponse(token,{status:200,headers:{"Content-Type":"text/plain; charset=utf-8","Cache-Control":"no-store"}})}
+import { NextResponse } from "next/server";
+// Public, Riot-issued verification string for this product URL.
+export function GET() {
+  return new NextResponse("8103dba6-ae48-4cac-b40f-ca7b7950a0d9", {
+    status: 200,
+    headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-store" },
+  });
+}
