@@ -26,3 +26,27 @@ Valorant Insight is an independent, public-facing opt-in player coaching and his
 - https://developer.riotgames.com/docs/valorant
 - https://developer.riotgames.com/how-to-verify-site.html
 - https://support-developer.riotgames.com/hc/en-us/articles/22801383038867-Production-Key-Applications
+
+## Final submission checklist (DO NOT MISREPRESENT)
+- [x] Public demo UI with clearly disclosed synthetic match data
+- [x] Public reviewer walkthrough at /riot-review
+- [x] Simulated player opt-in and authorization journey at /connect
+- [x] Public explanatory pages at /about, /privacy, /terms
+- [x] Riot verification route prepared at /riot.txt (404 before official token)
+- [ ] Verify website domain acceptance with Riot and complete site verification
+- [ ] Replace legal-draft status with reviewed documents and valid responsible-operator identity and contact
+- [ ] Confirm hosting/subprocessor disclosures, retention/deletion policies and applicable legal bases
+- [ ] Submit a truthful Production application; do not claim integration or RSO approval
+- [ ] Obtain official Riot production and RSO approval before handling real match data
+
+### Copyable product description
+Valorant Insight is a public, player-opt-in VALORANT historical performance analytics and coaching website. The current accessible prototype uses clearly labeled synthetic data and demonstrates a responsive analytics dashboard, historical comparison of playtime windows and agents/maps, uncertainty-aware pre-queue timing insights, plus a simulated account linking and consent flow. The project is not currently connected to Riot's APIs. After appropriate Riot approvals, players will authorize access using Riot Sign On, see private historical match analysis, and have controls for account disconnection and data deletion. The app will not offer live tactical guidance, opponent scouting, win guarantees, or unauthorized player lookups.
+
+### Public reviewer links
+- Demo: https://valorant-insight-bice.vercel.app/
+- Walkthrough: https://valorant-insight-bice.vercel.app/riot-review
+- Authorization UX simulation: https://valorant-insight-bice.vercel.app/connect
+- Policies (review drafts): https://valorant-insight-bice.vercel.app/privacy and /terms
+
+### Not yet verified
+Website availability and production reviewer access must be tested from an unauthenticated browser. Vercel deployment protection may require configuration to allow Riot reviewers access. No legal documents should be represented as finalized until verified.
